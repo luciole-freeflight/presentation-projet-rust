@@ -110,6 +110,7 @@ TODO: ajouter screenshot pipeline
 ... 
 >>> print(foo(8))
 [0, 1, 2, 3, 4, 5, 6, 7]
+
 ```
 
 ## Et l'usage possible autour de ces codes
