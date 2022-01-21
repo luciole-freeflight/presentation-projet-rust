@@ -6,7 +6,7 @@ test:
   stage: test
   image: python:3.10-slim
   script:
-    - python -V
+    - python --version
     - python -m doctest src/content.md
 
 .pages-build: &build
