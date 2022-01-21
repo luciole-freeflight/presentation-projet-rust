@@ -1,0 +1,24 @@
+stages:
+  - build
+
+.pages-build: &build
+  image: pandoc/latex
+  script:
+    - mkdir public/
+    - pandoc --version
+    - pandoc -d slideshow.yml
+  artifacts:
+    paths:
+      - public
+
+test-pages:
+  stage: build
+  <<: *build
+  except:
+    - main
+
+pages:
+  stage: build
+  <<: *build
+  only:
+    - main
