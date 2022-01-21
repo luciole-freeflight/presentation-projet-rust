@@ -15,7 +15,7 @@ standalone: true
 self-contained: true
 
 variables:
-  theme: simple
+  theme: simple # TODO: injecter thème Kaizen
   margin: 0.1  # to ensure readability
 
 slide-level: 2
