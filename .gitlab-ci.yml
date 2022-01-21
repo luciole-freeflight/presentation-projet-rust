@@ -1,0 +1,32 @@
+stages:
+  - test
+  - build
+
+test:
+  stage: test
+  image: python:3.10-slim
+  script:
+    - python --version
+    - python -m doctest src/content.md
+
+.pages-build: &build
+  image: pandoc/latex
+  script:
+    - mkdir public/
+    - pandoc --version
+    - pandoc -d slideshow.yml
+  artifacts:
+    paths:
+      - public
+
+test-pages:
+  stage: build
+  <<: *build
+  except:
+    - main
+
+pages:
+  stage: build
+  <<: *build
+  only:
+    - main

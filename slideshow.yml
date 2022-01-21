@@ -1,0 +1,24 @@
+# Reference : https://pandoc.org/MANUAL.html#default-files
+
+input-files:
+  - src/content.md
+
+include-after-body:
+  - theme/footer.html
+
+to: revealjs
+
+# Output filename shall be "public/index.html" for Gitlab Pages to serve it nicely
+output-file: public/index.html
+
+standalone: true
+self-contained: true
+
+variables:
+  theme: simple # TODO: injecter thème Kaizen
+  margin: 0.1  # to ensure readability
+
+slide-level: 2
+
+verbosity: INFO
+fail-if-warnings: true
