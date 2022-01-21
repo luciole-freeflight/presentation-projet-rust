@@ -1,7 +1,7 @@
 ---
-title: Utiliser la forge Kaizen pour générer des présentations
-subtitle: en utilisant la forge
-keywords: modèle, template, forge
+title: Travailler ses présentations sur la forge Kaizen
+subtitle: en s'appuyant sur la puissance de Git, Gitlab, Markdown, Pandoc et Reveal.js
+keywords: modèle, template, forge, pipeline
 author: Joël Bourgault - Kaizen Solutions
 lang: fr
 ---
