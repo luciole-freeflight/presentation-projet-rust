@@ -81,7 +81,7 @@ TODO: ajouter lien
 :conversion vers une présentation [Reveal.js];
 :publication en ligne [Gitlab Pages];
 @enduml
-``` { .left g
+```
 
 ## Quelques exemples de Markdown
 
