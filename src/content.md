@@ -17,23 +17,61 @@ lang: fr
 ## Les besoins
 
 - écrire une présentation structurée
-- sans (trop) se poser de question sur le modèle
+- sans (trop) se poser de question de mise en forme
 - de manière contributive
 - et diffuser ça en ligne
 
 ## Structurée ?
 
+Ou disons, hiérarchisée :
 
-https://unsplash.com/photos/2vhSS6ksgD0
+- avec du contenu focalisé, sans fioritude
+- regroupé par structures
+
+![](src/structure.jpg){ .right }
+
+
+## Présenter du code facilement
+
+- coloration syntaxique
+- test des exemples de code
+
+(voir section suivante)
+
+TODO: ajouter screenshot code coloré
+
+## Faire du suivi en version
+
+gestion des évolutions :
+
+- tickets
+- requêtes de fusion
+
+et ce bien sûr, en même temps que les évolutions de code
+
+TODO: ajouter screenshot merge request, avec discussion
+
+## Générer des présentations dans des pipelines
+
+- mettre facilement à jour les modèles de document
+- générer des documents depuis des fichiers textes
+
+## Publier les présentations en ligne
+
+- géré par la forge Kaizen : Gitlab pages
+
+TODO: ajouter lien
+
+ça marche aussi hors-ligne, le fichier peut être auto-porteur
+
+
 
 
 # Comment ça marche
 
 ## La forge et ses pipelines
 
-![Nicolas Messifet](src/pipeline.jpg)
-
-[crédit photo](https://unsplash.com/photos/rsjhvlghOLw)
+![](src/pipeline.jpg){ .right }
 
 ```plantuml
 @startuml
@@ -43,7 +81,7 @@ https://unsplash.com/photos/2vhSS6ksgD0
 :conversion vers une présentation [Reveal.js];
 :publication en ligne [Gitlab Pages];
 @enduml
-```
+``` { .left g
 
 ## Quelques exemples de Markdown
 
@@ -82,40 +120,6 @@ Ben oui, c'est quand même contraignant d'écrire en Markdown !
 
 TODO: ajouter screenshot markdown
 
-## Présenter du code facilement 
-
-- coloration syntaxique 
-- test des exemples de code
-
-(voir section suivante)
-
-TODO: ajouter screenshot code coloré
-
-## Faire du suivi en version
-
-gestion des évolutions :
-
-- tickets
-- requêtes de fusion
-
-et ce bien sûr, en même temps que les évolutions de code
-
-TODO: ajouter screenshot merge request, avec discussion
-
-## Générer des présentations dans des pipelines
-
-- mettre facilement à jour les modèles de document
-- générer des documents depuis des fichiers textes
-
-## Publier les présentations en ligne
-
-- géré par la forge Kaizen : Gitlab pages
-
-TODO: ajouter lien
-
-ça marche aussi hors-ligne, le fichier peut être auto-porteur
-
-
 # Comment ça marche
 
 pipeline avec :
@@ -135,7 +139,7 @@ TODO: ajouter screenshot pipeline
 >>> def foo(bar: int) -> list[int]:
 ...     """Génère des kux sous forme d'entiers."""
 ...     return list(range(bar))
-... 
+...
 >>> print(foo(8))
 [0, 1, 2, 3, 4, 5, 6, 7]
 
@@ -155,3 +159,10 @@ TODO: ajouter screenshot de la trace de test
 TODO: ajouter screenshot avec tests foirés
 
 Et ainsi valider que les exemples sont conformes 🤩
+
+# Annexes
+
+## Crédits photo
+
+- pipelines : Nicolas Messifet, https://unsplash.com/photos/rsjhvlghOLw
+- structure : Danist Soh, https://unsplash.com/photos/2vhSS6ksgD0

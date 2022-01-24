@@ -1,0 +1,10 @@
+.left
+	float: left;
+	max-height: 90%;
+	width: 45%;
+}
+.right 
+	float: right;
+	max-height: 90%;
+	width: 45%;
+}
