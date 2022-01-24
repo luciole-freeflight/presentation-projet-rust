@@ -6,14 +6,42 @@ author: Joël Bourgault - Kaizen Solutions
 lang: fr
 ---
 
-# La forge et ses pipelines
+#
 
-TODO: schéma de pipeline, avec plantUML ou mermaid
+- pourquoi faire
+- comment s'y prendre
+- comment ça marche
+
+# Pourquoi faire ?
+
+## Les besoins
+
+- écrire une présentation structurée
+- sans (trop) se poser de question sur le modèle
+- de manière contributive
+- et diffuser ça en ligne
+
+## Structurée ?
+
+
+https://unsplash.com/photos/2vhSS6ksgD0
+
+
+# Comment ça marche
+
+## La forge et ses pipelines
+
+![Nicolas Messifet](src/pipeline.jpg)
+
+[crédit photo](https://unsplash.com/photos/rsjhvlghOLw)
 
 ```plantuml
 @startuml
-:écriture Markdown;
-:conversion par Pandoc;
+:idée de présentation [collab'];
+:création projet [Gitlab];
+:écriture Markdown, suivie en version [Git];
+:conversion vers une présentation [Reveal.js];
+:publication en ligne [Gitlab Pages];
 @enduml
 ```
 
