@@ -1,5 +1,5 @@
 ---
-title: Travailler ses présentations sur la forge Kaizen
+title: Faire ses présentations sur la forge Kaizen
 subtitle: en s'appuyant sur la puissance de Git, Gitlab, Markdown, Pandoc et Reveal.js
 keywords: modèle, template, forge, pipeline
 author: Joël Bourgault - Kaizen Solutions
@@ -8,132 +8,68 @@ lang: fr
 
 #
 
-- pourquoi faire
+- pour quoi faire ?
 - comment s'y prendre
 - comment ça marche
 
-# Pourquoi faire ?
+# Pour quoi faire ?
 
-## Les besoins
+ou pourquoi s'éloigner des [outils WYSIWYG][wysiwyg] ?
 
-- écrire une présentation structurée
-- sans (trop) se poser de question de mise en forme
-- de manière contributive
-- et diffuser ça en ligne
+[wysiwyg]: https://fr.wikipedia.org/wiki/What_you_see_is_what_you_get
 
-## Structurée ?
+## Les avantages, en bref
 
-Ou disons, hiérarchisée :
+- écrire dans un format simple et structuré
+- en exploitant les outils modernes
+- sans (trop) anticiper le format de publication
 
-- avec du contenu focalisé, sans fioritude
-- regroupé par structures
+## Écriture simplifiée
 
-![](src/structure.jpg){ .right }
+- focalisation sur le fond
+- coloration syntaxique automatique (dans les éditeurs de texte sérieux)
 
+## Apports organisationnels
 
-## Présenter du code facilement
+- suivi de version trivial
+- édition contributive
 
-- coloration syntaxique
-- test des exemples de code
+## Apports techniques
 
-(voir section suivante)
-
-TODO: ajouter screenshot code coloré
-
-## Faire du suivi en version
-
-gestion des évolutions :
-
-- tickets
-- requêtes de fusion
-
-et ce bien sûr, en même temps que les évolutions de code
-
-TODO: ajouter screenshot merge request, avec discussion
-
-## Générer des présentations dans des pipelines
-
-- mettre facilement à jour les modèles de document
-- générer des documents depuis des fichiers textes
-
-## Publier les présentations en ligne
-
-- géré par la forge Kaizen : Gitlab pages
-
-TODO: ajouter lien
-
-ça marche aussi hors-ligne, le fichier peut être auto-porteur
+- lisible de partout
+- exemples de code testables
+- traduction vers divers formats
+- publication automatisable
 
 
+# Markdown
+
+![](src/structure.jpg)
+
+## Un format simple
+
+fichier en 'pur' texte :
+
+- compréhensible directement par des humains
+- juste quelques symboles pour exprimer la sémantique
+
+et on laisse les outils ajouter la magie
 
 
-# Comment ça marche
-
-## La forge et ses pipelines
-
-![](src/pipeline.jpg){ .right }
-
-```plantuml
-@startuml
-:idée de présentation [collab'];
-:création projet [Gitlab];
-:écriture Markdown, suivie en version [Git];
-:conversion vers une présentation [Reveal.js];
-:publication en ligne [Gitlab Pages];
-@enduml
-```
-
-## Quelques exemples de Markdown
+## Exemple
 
 ```markdown
-# Un titre 1
 
-Avec du texte d'introduction
+## Markdown, un rendu sympa
 
-- et des puces
-- et du contenu
+Un exemple de liste de tâches :
 
-## Titre 2, imbriqué
-
-Cette planche est de niveau inférieur, et donc en vertical dans l'affichage.
-
-- [ ] liste à cocher, avec [un bête lien vers ce projet sur la Forge Kaizen][1]
+- [ ] liste à cocher, avec [le lien vers ce projet][ce-projet]
 - [x] avec des tâches complétées
 
-[1]: https://forge.kaizen-solutions.net/-/ide/project/poles/pole-synergie/pr-sentations/presentations-sur-la-forge-kaizen/tree/1-creer-bases-de-la-presentation/
-```
-## Et un rendu sympa
+[ce-projet]: https://forge.kaizen-solutions.net/-/ide/project/poles/pole-synergie/pr-sentations/presentations-sur-la-forge-kaizen/tree/1-creer-bases-de-la-presentation/
 
-- [ ] liste à cocher, avec [un bête lien vers ce projet sur la Forge Kaizen][1]
-- [x] avec des tâches complétées
-
-[1]: https://forge.kaizen-solutions.net/-/ide/project/poles/pole-synergie/pr-sentations/presentations-sur-la-forge-kaizen/tree/1-creer-bases-de-la-presentation/
-
-## Et toutes sortes de plugins
-
-https://plantuml.com/fr/activity-diagram-beta
-
-
-# Mais quel intérêt ?
-
-Ben oui, c'est quand même contraignant d'écrire en Markdown !
-
-TODO: ajouter screenshot markdown
-
-# Comment ça marche
-
-pipeline avec :
-
-- [pandoc](https://pandoc.org) : convertit le Markdown vers une présentation Reveal.js
-- [Reveal.js](https://reveal.js) affiche et anime des présentations dans les navigateurs modernes
-- job spécifique Gitlab pages
-
-TODO: ajouter screenshot pipeline
-
-
-# Usage avec du code
-
-## Exemple de code
+Et un exemple de code :
 
 ```python
 >>> def foo(bar: int) -> list[int]:
@@ -145,22 +81,117 @@ TODO: ajouter screenshot pipeline
 
 ```
 
-## Et l'usage possible autour de ces codes
+## Markdown, un rendu sympa
 
-Le code de la planche précédente étant formatté comme du `doctest`,
-Python peut tester ce code très facilement :
+Un exemple de liste de tâches :
+
+- [ ] liste à cocher, avec [le lien vers ce projet][ce-projet]
+- [x] avec des tâches complétées
+
+[ce-projet]: https://forge.kaizen-solutions.net/-/ide/project/poles/pole-synergie/pr-sentations/presentations-sur-la-forge-kaizen/tree/1-creer-bases-de-la-presentation/
+
+Et un exemple de code :
+
+```python
+>>> def foo(bar: int) -> list[int]:
+...     """Génère des kux sous forme d'entiers."""
+...     return list(range(bar))
+...
+>>> print(foo(8))
+[0, 1, 2, 3, 4, 5, 6, 7]
+
+```
+
+# La forge
+
+![](forge Kaizen.PNG)
+
+## Suivi de version
+
+avec Git
+
+- liste des versions, avec commentaire et auteur
+- étiquettes d'identification
+
+![](src/commits.PNG)
+
+## Édition contributive
+
+avec les requêtes de fusion
+
+- basé sur les branches de Git
+- circuit d'approbation configurable
+
+![](src/merge request.PNG)
+
+## Traitements automatisables
+
+- vérification des exemples de code
+- application de règles ad hoc
+- conversion de format
+- publication
+
+
+# Comment ça marche
+
+![](src/pipeline.jpg)
+
+## [Gitlab-CI](https://docs.gitlab.com/ee/ci/)
+
+suit les instructions du `.gitlab-ci.yml` pour exécuter les outils en séquence
+
+![](src/pipeline passed.PNG)
+
+## Exemple de job : [`doctest` Python](https://docs.python.org/3/library/doctest.html)
+
+avec du code formatté comme `doctest`, c'est testable :
 
 ```
 $ python -m doctest src/content.md
 ```
 
-TODO: ajouter contenu du .gitlab.yml pour configurer le job de test
-TODO: ajouter screenshot de la trace de test
-TODO: ajouter screenshot avec tests foirés
+on valide en continu que les exemples publiés sont conformes 🤩
 
-Et ainsi valider que les exemples sont conformes 🤩
+![](src/pipeline failed - summary.PNG)
+![](src/pipeline failed - details.PNG)
+
+## [Pandoc](https://pandoc.org)
+
+assure la traduction, paramétré à l'envi par un fichier YAML :
+
+- format de sortie (ici Reveal.js)
+- variables Pandoc sympas : `standalone`, `self-contained`, `fail-if-warning`
+- variables de sortie : thème à appliquer...
+
+## [Reveal.js](https://reveal.js)
+
+affiche et anime des présentations dans les navigateurs modernes
+
+![](src/Reveal.js.PNG)
+
+## [Gitlab pages](https://docs.gitlab.com/ee/user/project/pages/)
+
+- publication de sites web statiques
+- en recopiant le contenu de `/public/`, en servant le fichier `index.html`
+- déclenché par un job nommé `pages`
+
+## Et toutes sortes de plugins pour Markdown
+
+- génération de diagrammes : [PlantUML](https://plantuml.com/fr/), [Mermaid](https://mermaid-js.github.io/mermaid/#/)...
+
 
 # Annexes
+
+## Saines lectures
+
+- [Plain Text, Papers, Pandoc](https://kieranhealy.org/blog/archives/2014/01/23/plain-text/)
+
+  Pour un usage académique de Markdown et Pandoc, avec gestion des citations,
+  des numérotations des tables et des figures...
+
+- [En finir avec Word ! Pour une analyse des enjeux relatifs aux traitements de texte et à leur utilisation](https://eriac.hypotheses.org/80)
+
+  Essai quasi-philosophique sur l'évolution des traitements de texte et de la maîtrise des utilisateurs
 
 ## Crédits photo
 
