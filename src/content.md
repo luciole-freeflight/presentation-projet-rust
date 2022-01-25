@@ -104,7 +104,7 @@ Et un exemple de code :
 
 # La forge
 
-![](forge Kaizen.PNG)
+![](src/forge Kaizen.PNG)
 
 ## Suivi de version
 
