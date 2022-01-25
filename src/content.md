@@ -68,6 +68,9 @@ Un exemple de liste de tâches :
 - [x] avec des tâches complétées
 
 [ce-projet]: https://forge.kaizen-solutions.net/-/ide/project/poles/pole-synergie/pr-sentations/presentations-sur-la-forge-kaizen/tree/1-creer-bases-de-la-presentation/
+```
+
+## Exemple, suite
 
 Et un exemple de code :
 
@@ -195,5 +198,5 @@ affiche et anime des présentations dans les navigateurs modernes
 
 ## Crédits photo
 
-- pipelines : Nicolas Messifet, https://unsplash.com/photos/rsjhvlghOLw
-- structure : Danist Soh, https://unsplash.com/photos/2vhSS6ksgD0
+- [pipelines : Nicolas Messifet](https://unsplash.com/photos/rsjhvlghOLw)
+- [structure : Danist Soh](https://unsplash.com/photos/2vhSS6ksgD0)
