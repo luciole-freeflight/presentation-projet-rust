@@ -58,7 +58,6 @@ et on laisse les outils ajouter la magie
 ## Exemple
 
 ```markdown
-
 ## Markdown, un rendu sympa
 
 Un exemple de liste de tâches :
@@ -74,6 +73,7 @@ Un exemple de liste de tâches :
 
 Et un exemple de code :
 
+```mahkdown
 ```python
 >>> def foo(bar: int) -> list[int]:
 ...     """Génère des kux sous forme d'entiers."""
