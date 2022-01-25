@@ -3,6 +3,8 @@
 input-files:
   - src/content.md
 
+css: theme/theme.css
+
 include-after-body:
   - theme/footer.html
 
