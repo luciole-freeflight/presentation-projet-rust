@@ -34,14 +34,14 @@ Cette planche est de niveau inférieur, et donc en vertical dans l'affichage.
 - [ ] liste à cocher, avec [un bête lien vers ce projet sur la Forge Kaizen][1]
 - [x] avec des tâches complétées
 
-[1]: https://forge.kaizen-solutions.net/-/ide/project/poles/pole-synergie/pr-sentations/presentations-sur-la-forge-kaizen/tree/1-creer-bases-de-la-presentation/
+[1]: https://forge.kaizen-solutions.net/-/ide/project/poles/pole-synergie/presentations/presentations-sur-la-forge-kaizen/tree/1-creer-bases-de-la-presentation/
 ```
 ## Et un rendu sympa
 
 - [ ] liste à cocher, avec [un bête lien vers ce projet sur la Forge Kaizen][1]
 - [x] avec des tâches complétées
 
-[1]: https://forge.kaizen-solutions.net/-/ide/project/poles/pole-synergie/pr-sentations/presentations-sur-la-forge-kaizen/tree/1-creer-bases-de-la-presentation/
+[1]: https://forge.kaizen-solutions.net/-/ide/project/poles/pole-synergie/presentations/presentations-sur-la-forge-kaizen/tree/1-creer-bases-de-la-presentation/
 
 ## Et toutes sortes de plugins
 
