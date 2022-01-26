@@ -42,6 +42,8 @@ ou pourquoi s'éloigner des [outils WYSIWYG][wysiwyg] ?
 - publication automatisable
 
 
+# Comment ça marche
+
 # Markdown
 
 ![](src/structure.jpg)
@@ -65,7 +67,7 @@ Un exemple de liste de tâches :
 - [ ] liste à cocher, avec [le lien vers ce projet][ce-projet]
 - [x] avec des tâches complétées
 
-[ce-projet]: https://forge.kaizen-solutions.net/-/ide/project/poles/pole-synergie/presentations/presentations-sur-la-forge-kaizen/tree/1-creer-bases-de-la-presentation/
+[ce-projet]: https://forge.kaizen-solutions.net/poles/pole-synergie/presentations/presentations-sur-la-forge-kaizen
 
 ```
 
@@ -91,7 +93,7 @@ Un exemple de liste de tâches :
 - [ ] liste à cocher, avec [le lien vers ce projet][ce-projet]
 - [x] avec des tâches complétées
 
-[ce-projet]: https://forge.kaizen-solutions.net/-/ide/project/poles/pole-synergie/pr-sentations/presentations-sur-la-forge-kaizen/tree/1-creer-bases-de-la-presentation/
+[ce-projet]: https://forge.kaizen-solutions.net/poles/pole-synergie/presentations/presentations-sur-la-forge-kaizen
 
 Et un exemple de code :
 
