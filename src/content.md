@@ -6,12 +6,6 @@ author: Joël Bourgault - Kaizen Solutions
 lang: fr
 ---
 
-#
-
-- pour quoi faire ?
-- comment s'y prendre
-- comment ça marche
-
 # Pour quoi faire ?
 
 ou pourquoi s'éloigner des [outils WYSIWYG][wysiwyg] ?
@@ -29,11 +23,6 @@ ou pourquoi s'éloigner des [outils WYSIWYG][wysiwyg] ?
 - focalisation sur le fond
 - coloration syntaxique automatique (dans les éditeurs de texte sérieux)
 
-## Apports organisationnels
-
-- suivi de version trivial
-- édition contributive
-
 ## Apports techniques
 
 - lisible de partout
@@ -41,10 +30,13 @@ ou pourquoi s'éloigner des [outils WYSIWYG][wysiwyg] ?
 - traduction vers divers formats
 - publication automatisable
 
+## Apports organisationnels
 
-# Comment ça marche
+- suivi de version trivial
+- édition contributive
 
-# Markdown
+
+# Comment ça marche : Markdown
 
 ![](src/structure.jpg)
 
@@ -86,7 +78,7 @@ Et un exemple de code :
 
 ```
 
-## Markdown, un rendu sympa
+## Un rendu sympa
 
 Un exemple de liste de tâches :
 
@@ -107,7 +99,7 @@ Et un exemple de code :
 
 ```
 
-# La forge
+# Comment ça marche : la forge
 
 ![](src/forge Kaizen.PNG)
 
@@ -137,15 +129,30 @@ avec les requêtes de fusion
 - publication
 
 
-# Comment ça marche
+# Comment ça marche : les pipelines
 
 ![](src/pipeline.jpg)
 
 ## [Gitlab-CI](https://docs.gitlab.com/ee/ci/)
 
-suit les instructions du `.gitlab-ci.yml` pour exécuter les outils en séquence
+le fichier `.gitlab-ci.yml` définit les actions à réaliser
 
 ![](src/pipeline passed.PNG)
+
+```yaml
+stages:
+  - test
+  - build
+
+test:
+  stage: test
+  image: python:3.10-slim
+  script:
+    - python --version
+    - python -m doctest src/content.md
+
+(...)
+```
 
 ## Exemple de job : [`doctest` Python](https://docs.python.org/3/library/doctest.html)
 
