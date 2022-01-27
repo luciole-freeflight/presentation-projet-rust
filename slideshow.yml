@@ -3,7 +3,10 @@
 input-files:
   - src/content.md
 
-css: theme/theme.css
+css: theme/theme.css # s'empile sur le thème Reveal.js, pour s'approcher du thème Kaizen
+
+include-in-header:
+  - theme/favicon.html
 
 include-after-body:
   - theme/footer.html
@@ -17,7 +20,7 @@ standalone: true
 self-contained: true
 
 variables:
-  theme: simple # TODO: injecter thème Kaizen
+  theme: simple
   margin: 0.1  # to ensure readability
 
 slide-level: 2
