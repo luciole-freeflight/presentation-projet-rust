@@ -1,3 +1,28 @@
+/* ajustement du thème "simple" pour s'approcher du thème Kaizen */
+.reveal h1 {
+	font-size: 2.3em;
+	padding-top: 0.8em;
+	padding-bottom: 0.8em;
+}
+.reveal h2 {
+	font-size: 1.8em;
+}
+.reveal h1,
+.reveal h2 {
+	font-family: 'bebas neue';
+	text-transform: uppercase;
+	/* on s'assure que le fond de titre est assez large -- à améliorer */
+	margin-left: -10%;
+	margin-right: -10%;
+	padding-left: 10%;
+	padding-right: 10%;
+	background: linear-gradient(to right, #beffb5, #19efef 77%);
+}
+
+.reveal h3 {
+	font-size: 1.4em;
+}
+
 .left
 	float: left;
 	max-height: 90%;
