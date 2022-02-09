@@ -1,4 +1,23 @@
 /* ajustement du thème "simple" pour s'approcher du thème Kaizen */
+:root {
+	--r-main-font-size: 25px;
+	--r-heading-font: 'bebas neue';
+	--r-heading-text-transform: uppercase;
+}
+
+.reveal .slides {
+	margin-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+}
+
+#title-slide p {
+	/* text under title, on front slide */
+	color: white;
+	text-shadow: 0 0 2px gray, 0 0 10px black;
+}
+
 .reveal h1 {
 	font-size: 2.3em;
 	padding-top: 0.8em;
@@ -9,8 +28,6 @@
 }
 .reveal h1,
 .reveal h2 {
-	font-family: 'bebas neue';
-	text-transform: uppercase;
 	/* on s'assure que le fond de titre est assez large -- à améliorer */
 	margin-left: -10%;
 	margin-right: -10%;
@@ -23,13 +40,13 @@
 	font-size: 1.4em;
 }
 
-.left
+.left {
 	float: left;
-	max-height: 90%;
+	max-height: 90%;
 	width: 45%;
 }
-.right 
+.right {
 	float: right;
-	max-height: 90%;
+	max-height: 90%;
 	width: 45%;
 }

@@ -10,6 +10,8 @@ lang: fr
 
 ou pourquoi s'éloigner des [outils WYSIWYG][wysiwyg] ?
 
+![](src/wysiwyg website editor.webp)
+
 [wysiwyg]: https://fr.wikipedia.org/wiki/What_you_see_is_what_you_get
 
 ## Les avantages, en bref
@@ -36,9 +38,7 @@ ou pourquoi s'éloigner des [outils WYSIWYG][wysiwyg] ?
 - édition contributive
 
 
-# Comment ça marche : Markdown
-
-![](src/structure.jpg)
+# Comment ça marche : Markdown { data-background-image="src/structure.jpg" }
 
 ## Un format simple
 
@@ -99,7 +99,12 @@ Et un exemple de code :
 
 ```
 
-# Comment ça marche : la forge
+# Comment ça marche : la forge { data-background-image="src/forge.jpg" }
+
+## Un portail
+
+- pour héberger des projets
+- organisés en groupes avec gestion de droits
 
 ![](src/forge Kaizen.PNG)
 
@@ -129,9 +134,7 @@ avec les requêtes de fusion
 - publication
 
 
-# Comment ça marche : les pipelines
-
-![](src/pipeline.jpg)
+# Comment ça marche : les pipelines { data-background-image="src/pipeline.jpg" }
 
 ## [Gitlab-CI](https://docs.gitlab.com/ee/ci/)
 
@@ -164,8 +167,8 @@ $ python -m doctest src/content.md
 
 on valide en continu que les exemples publiés sont conformes 🤩
 
-![](src/pipeline failed - summary.PNG)
 ![](src/pipeline failed - details.PNG)
+![](src/pipeline failed - summary.PNG)
 
 ## [Pandoc](https://pandoc.org)
 
@@ -192,7 +195,7 @@ affiche et anime des présentations dans les navigateurs modernes
 - génération de diagrammes : [PlantUML](https://plantuml.com/fr/), [Mermaid](https://mermaid-js.github.io/mermaid/#/)...
 
 
-# Annexes
+# Annexes { data-background-image="src/library.jpg" }
 
 ## Saines lectures
 
@@ -207,5 +210,10 @@ affiche et anime des présentations dans les navigateurs modernes
 
 ## Crédits photo
 
+- [forgeron : Jonny Gios](https://unsplash.com/photos/mlI9vPVDV4k)
 - [pipelines : Nicolas Messifet](https://unsplash.com/photos/rsjhvlghOLw)
 - [structure : Danist Soh](https://unsplash.com/photos/2vhSS6ksgD0)
+- [bibliothèque : Darwin Vegher](https://unsplash.com/photos/W_ZYCEUapF0)
+
+
+# Merci ! { data-background-image="theme/image page de fin.jpg" }
