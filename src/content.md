@@ -219,6 +219,11 @@ affiche et anime des présentations dans les navigateurs modernes
 
 # Annexes { data-background-image="src/library.jpg" }
 
+## Quelles limites ?
+
+- l’insertion de diagrammes un peu classouilles n’est pas triviale (genre SmartArt)
+- visuel très formatté ; il faut connaître HTML/CSS pour aller plus loin
+
 ## Saines lectures
 
 - [Plain Text, Papers, Pandoc](https://kieranhealy.org/blog/archives/2014/01/23/plain-text/)
