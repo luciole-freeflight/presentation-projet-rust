@@ -8,6 +8,8 @@ lang: fr
 
 # Pour quoi faire ?
 
+. . .
+
 ou pourquoi s'éloigner des [outils WYSIWYG][wysiwyg] ?
 
 ![](src/wysiwyg website editor.webp)
@@ -42,14 +44,18 @@ ou pourquoi s'éloigner des [outils WYSIWYG][wysiwyg] ?
 
 ## Un format simple
 
-fichier en 'pur' texte :
+Markdown : fichier en texte 'pur'
 
-- compréhensible directement par des humains
 - juste quelques symboles pour exprimer la sémantique
+- lisible dans tous les logiciels
 
-et on laisse les outils ajouter la magie
+. . .
 
-## Exemple
+et on laisse les outils ajouter la magie ! 🪄
+
+## Exemple de Markdown
+
+pour du texte, un titre, une liste…
 
 ```markdown
 ## Markdown, un rendu sympa
@@ -65,9 +71,11 @@ Un exemple de liste de tâches :
 
 ## Exemple, suite
 
+pour présenter du code
+
+```markdown
 Et un exemple de code :
 
-```mahkdown
 ```python
 >>> def foo(bar: int) -> list[int]:
 ...     """Génère des kux sous forme d'entiers."""
@@ -80,12 +88,16 @@ Et un exemple de code :
 
 ## Un rendu sympa
 
+. . .
+
 Un exemple de liste de tâches :
 
 - [ ] liste à cocher, avec [le lien vers ce projet][ce-projet]
 - [x] avec des tâches complétées
 
 [ce-projet]: https://forge.kaizen-solutions.net/poles/pole-synergie/presentations/presentations-sur-la-forge-kaizen
+
+. . .
 
 Et un exemple de code :
 
@@ -103,17 +115,27 @@ Et un exemple de code :
 
 ## Un portail
 
+instance de [Gitlab](https://gitlab.org)
+
+![](src/logo gitlab.png)
+
 - pour héberger des projets
 - organisés en groupes avec gestion de droits
+
+. . .
 
 ![](src/forge Kaizen.PNG)
 
 ## Suivi de version
 
-avec Git
+avec Git bien sûr !
+
+![](src/logo git.png)
 
 - liste des versions, avec commentaire et auteur
 - étiquettes d'identification
+
+. . .
 
 ![](src/commits.PNG)
 
@@ -123,6 +145,8 @@ avec les requêtes de fusion
 
 - basé sur les branches de Git
 - circuit d'approbation configurable
+
+. . .
 
 ![](src/merge request.PNG)
 
@@ -140,8 +164,6 @@ avec les requêtes de fusion
 
 le fichier `.gitlab-ci.yml` définit les actions à réaliser
 
-![](src/pipeline passed.PNG)
-
 ```yaml
 stages:
   - test
@@ -157,18 +179,18 @@ test:
 (...)
 ```
 
-## Exemple de job : [`doctest` Python](https://docs.python.org/3/library/doctest.html)
+. . .
 
-avec du code formatté comme `doctest`, c'est testable :
+![](src/pipeline passed.PNG)
 
-```
-$ python -m doctest src/content.md
-```
+## Exemple de job : test de code
 
-on valide en continu que les exemples publiés sont conformes 🤩
+les exemples de code (genre [`doctest` Python][doctest]) sont testables automatiquement 🤩
 
 ![](src/pipeline failed - details.PNG)
 ![](src/pipeline failed - summary.PNG)
+
+[doctest]: https://docs.python.org/3/library/doctest.html
 
 ## [Pandoc](https://pandoc.org)
 
