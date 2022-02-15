@@ -117,7 +117,7 @@ Et un exemple de code :
 
 instance de [Gitlab](https://gitlab.org)
 
-![](src/logo gitlab.png)
+![](src/logo Gitlab.svg){ style="height: 150px;" }
 
 - pour héberger des projets
 - organisés en groupes avec gestion de droits
@@ -130,7 +130,7 @@ instance de [Gitlab](https://gitlab.org)
 
 avec Git bien sûr !
 
-![](src/logo git.png)
+![](src/logo Git.svg){ style="height: 150px;" }
 
 - liste des versions, avec commentaire et auteur
 - étiquettes d'identification
