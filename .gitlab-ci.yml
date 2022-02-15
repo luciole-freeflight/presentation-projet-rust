@@ -14,7 +14,8 @@ test:
   script:
     - mkdir public/
     - pandoc --version
-    - pandoc -d slideshow.yml
+    # convert to slideshow, applying theme-specific afterwards (so with higher priority)
+    - pandoc --defaults slideshow.yml --defaults theme/pandoc-params.yml
   artifacts:
     paths:
       - public
