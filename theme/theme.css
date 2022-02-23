@@ -40,13 +40,18 @@
 	font-size: 1.4em;
 }
 
+/* classes spécifiques pour la présentation */
 .left {
 	float: left;
 	max-height: 90%;
 	width: 45%;
+	margin-top: auto;
+	margin-bottom: auto;
 }
 .right {
 	float: right;
 	max-height: 90%;
 	width: 45%;
+	margin-top: auto;
+	margin-bottom: auto;
 }
