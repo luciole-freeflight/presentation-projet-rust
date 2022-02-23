@@ -55,6 +55,8 @@ et on laisse les outils ajouter la magie ! 🪄
 
 ## Exemple de Markdown
 
+::: { .left }
+
 pour du texte, un titre, une liste…
 
 ```markdown
@@ -65,11 +67,14 @@ Un exemple de liste de tâches :
 - [ ] liste à cocher, avec [le lien vers ce projet][ce-projet]
 - [x] avec des tâches complétées
 
-[ce-projet]: https://forge.kaizen-solutions.net/poles/pole-synergie/presentations/presentations-sur-la-forge-kaizen
+[ce-projet]: https://forge.kaizen-solutions.net/poles/pole-synergie
+/presentations/presentations-sur-la-forge-kaizen
 
 ```
 
-## Exemple, suite
+:::
+
+::: { .right }
 
 pour présenter du code
 
@@ -85,6 +90,8 @@ Et un exemple de code :
 [0, 1, 2, 3, 4, 5, 6, 7]
 
 ```
+
+:::
 
 ## Un rendu sympa
 
@@ -119,36 +126,54 @@ instance de [Gitlab](https://gitlab.org)
 
 ![](src/logo Gitlab.svg){ style="height: 150px;" }
 
+::: { .left }
+
 - pour héberger des projets
 - organisés en groupes avec gestion de droits
 
-. . .
+:::
+
+::: { .right }
 
 ![](src/forge Kaizen.PNG)
+
+:::
 
 ## Suivi de version
 
 avec Git bien sûr !
 
-![](src/logo Git.svg){ style="height: 150px;" }
+![](src/logo Git.svg){ style="height: 80px;" }
+
+::: { .left }
 
 - liste des versions, avec commentaire et auteur
 - étiquettes d'identification
 
-. . .
+:::
+
+::: { .right }
 
 ![](src/commits.PNG)
 
+:::
+
 ## Édition contributive
+
+::: { .left }
 
 avec les requêtes de fusion
 
 - basé sur les branches de Git
 - circuit d'approbation configurable
 
-. . .
+:::
+
+::: { .right }
 
 ![](src/merge request.PNG)
+
+:::
 
 ## Traitements automatisables
 
