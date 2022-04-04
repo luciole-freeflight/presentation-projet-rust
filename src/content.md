@@ -267,5 +267,6 @@ affiche et anime des présentations dans les navigateurs modernes
 - [structure : Danist Soh](https://unsplash.com/photos/2vhSS6ksgD0)
 - [bibliothèque : Darwin Vegher](https://unsplash.com/photos/W_ZYCEUapF0)
 
+# { .blank data-background-image="theme/image page de fin.jpg" }
 
-# Merci ! { data-background-image="theme/image page de fin.jpg" }
+
