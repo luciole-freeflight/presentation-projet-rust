@@ -22,6 +22,7 @@ ou pourquoi s'éloigner des [outils WYSIWYG][wysiwyg] ?
 - en exploitant les outils modernes
 - sans (trop) anticiper le format de publication
 
+
 ## Écriture simplifiée
 
 - focalisation sur le fond
@@ -117,6 +118,50 @@ Et un exemple de code :
 [0, 1, 2, 3, 4, 5, 6, 7]
 
 ```
+
+# Et aussi des diagrammes
+
+::: { .left }
+En partant d'une description textuelle :
+
+```
+@startuml
+abstract        abstract
+abstract class  "abstract class"
+annotation      annotation
+circle          circle
+()              circle_short_form
+class           class
+diamond         diamond
+<>              diamond_short_form
+entity          entity
+enum            enum
+interface       interface
+@enduml
+```
+:::
+
+. . .
+
+::: { .right }
+On obtient un joli rendu :
+
+```plantuml
+@startuml
+abstract        abstract
+abstract class  "abstract class"
+annotation      annotation
+circle          circle
+()              circle_short_form
+class           class
+diamond         diamond
+<>              diamond_short_form
+entity          entity
+enum            enum
+interface       interface
+@enduml
+```
+:::
 
 # Comment ça marche : la forge { data-background-image="src/forge.jpg" }
 
