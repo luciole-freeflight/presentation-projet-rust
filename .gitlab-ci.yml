@@ -10,12 +10,13 @@ test:
     - python -m doctest src/content.md
 
 .pages-build: &build
-  image: pandoc/latex
+  image: ojob/pandoc-plantuml
   script:
     - mkdir public/
+    - mkdir plantuml-images/
     - pandoc --version
     # convert to slideshow, applying theme-specific afterwards (so with higher priority)
-    - pandoc --defaults slideshow.yml --defaults theme/pandoc-params.yml
+    - pandoc --filter pandoc-plantuml --defaults slideshow.yml --defaults theme/pandoc-params.yml
   artifacts:
     paths:
       - public
