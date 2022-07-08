@@ -314,4 +314,12 @@ affiche et anime des présentations dans les navigateurs modernes
 
 # { .blank data-background-image="theme/image page de fin.jpg" }
 
+::: { .contact }
 
+Joël Bourgault
+
+Dev interne SI Kaizen Solutions
+
+joel.bourgault@kaizen-solutions.net
+
+:::
