@@ -58,3 +58,23 @@
 .blank {
 	background: none !important;
 }
+.contact {
+	position: absolute;
+	top: 50vh;
+	margin-top: -8vh;
+	left: 50vw;
+	margin-left: -45vw;
+	width: 30vw;
+}
+.contact p:first-child {
+	text-transform: uppercase;
+	font-family: 'bebas neue';
+	font-size: 5vh;
+}
+.contact p {
+	color: white;
+	text-align: center;
+	font-size: 3vh;
+	line-height: 5vh;
+	margin: 0;
+}
