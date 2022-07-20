@@ -4,6 +4,10 @@
 	--r-heading-font: 'bebas neue';
 	--r-heading-text-transform: uppercase;
 }
+@font-face {
+	font-family: 'bebas neue';
+	src: url(BebasNeue-Regular.ttf);
+}
 
 .reveal .slides {
 	margin-top: 0;
