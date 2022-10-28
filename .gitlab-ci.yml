@@ -18,6 +18,7 @@ test:
     - pandoc --version
     # convert to slideshow, applying theme-specific afterwards (so with higher priority)
     - pandoc --filter pandoc-plantuml --defaults theme/pandoc-params.yml --self-contained *.md
+    - mv public/ ../
   artifacts:
     paths:
       - public
