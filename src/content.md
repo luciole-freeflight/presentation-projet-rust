@@ -12,7 +12,7 @@ lang: fr
 
 ou pourquoi s'éloigner des [outils WYSIWYG][wysiwyg] ?
 
-![](src/wysiwyg website editor.webp)
+![](wysiwyg website editor.webp)
 
 [wysiwyg]: https://fr.wikipedia.org/wiki/What_you_see_is_what_you_get
 
@@ -41,7 +41,7 @@ ou pourquoi s'éloigner des [outils WYSIWYG][wysiwyg] ?
 - édition contributive
 
 
-# Comment ça marche : Markdown { data-background-image="src/structure.jpg" }
+# Comment ça marche : Markdown { data-background-image="structure.jpg" }
 
 ## Un format simple
 
@@ -163,13 +163,13 @@ interface       interface
 ```
 :::
 
-# Comment ça marche : la forge { data-background-image="src/forge.jpg" }
+# Comment ça marche : la forge { data-background-image="forge.jpg" }
 
 ## Un portail
 
 instance de [Gitlab](https://gitlab.org)
 
-![](src/logo Gitlab.svg){ style="height: 150px;" }
+![](logo Gitlab.svg){ style="height: 150px;" }
 
 ::: { .left }
 
@@ -180,7 +180,7 @@ instance de [Gitlab](https://gitlab.org)
 
 ::: { .right }
 
-![](src/forge Kaizen.PNG)
+![](forge Kaizen.PNG)
 
 :::
 
@@ -188,7 +188,7 @@ instance de [Gitlab](https://gitlab.org)
 
 avec Git bien sûr !
 
-![](src/logo Git.svg){ style="height: 80px;" }
+![](logo Git.svg){ style="height: 80px;" }
 
 ::: { .left }
 
@@ -199,7 +199,7 @@ avec Git bien sûr !
 
 ::: { .right }
 
-![](src/commits.PNG)
+![](commits.PNG)
 
 :::
 
@@ -216,7 +216,7 @@ avec les requêtes de fusion
 
 ::: { .right }
 
-![](src/merge request.PNG)
+![](merge request.PNG)
 
 :::
 
@@ -228,7 +228,7 @@ avec les requêtes de fusion
 - publication
 
 
-# Comment ça marche : les pipelines { data-background-image="src/pipeline.jpg" }
+# Comment ça marche : les pipelines { data-background-image="pipeline.jpg" }
 
 ## [Gitlab-CI](https://docs.gitlab.com/ee/ci/)
 
@@ -244,21 +244,21 @@ test:
   image: python:3.10-slim
   script:
     - python --version
-    - python -m doctest src/content.md
+    - python -m doctest /content.md
 
 (...)
 ```
 
 . . .
 
-![](src/pipeline passed.PNG)
+![](pipeline passed.PNG)
 
 ## Exemple de job : test de code
 
 les exemples de code (genre [`doctest` Python][doctest]) sont testables automatiquement 🤩
 
-![](src/pipeline failed - details.PNG)
-![](src/pipeline failed - summary.PNG)
+![](pipeline failed - details.PNG)
+![](pipeline failed - summary.PNG)
 
 [doctest]: https://docs.python.org/3/library/doctest.html
 
@@ -274,7 +274,7 @@ assure la traduction, paramétré à l'envi par un fichier YAML :
 
 affiche et anime des présentations dans les navigateurs modernes
 
-![](src/Reveal.js.PNG)
+![](Reveal.js.PNG)
 
 ## [Gitlab pages](https://docs.gitlab.com/ee/user/project/pages/)
 
@@ -286,8 +286,7 @@ affiche et anime des présentations dans les navigateurs modernes
 
 - génération de diagrammes : [PlantUML](https://plantuml.com/fr/), [Mermaid](https://mermaid-js.github.io/mermaid/#/)...
 
-
-# Annexes { data-background-image="src/library.jpg" }
+# Annexes { data-background-image="library.jpg" }
 
 ## Quelles limites ?
 
