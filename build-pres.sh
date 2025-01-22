@@ -1,3 +1,4 @@
+#!/bin/env sh
 cd src
 
 mkdir -p public
@@ -11,6 +12,7 @@ docker run \
   docker.io/ojob/pandoc-plantuml \
   --filter pandoc-plantuml \
   -d theme/pandoc-params.yml \
+  --self-contained
   *.md \
   $*
 
