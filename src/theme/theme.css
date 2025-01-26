@@ -18,10 +18,32 @@
 	margin-bottom: auto;
 }
 
+
+#title-slide h1 {
+  font-size: 3em;
+  color: DarkOrange;
+  background-color: #fdf6e300;
+  font-weight: bolder;
+}
+
+#title-slide .subtitle {
+  font-size: 1.5em;
+}
+
 #title-slide p {
 	/* text under title, on front slide */
-	color: white;
+	color: gray;
+  background-color: #fdf6e3cc;
+  /*
 	text-shadow: 0 0 2px gray, 0 0 10px black;
+  */
+}
+
+.subtitle {
+  color: peru;
+}
+.author {
+  font-size: 1em;
 }
 
 .reveal h1 {
@@ -39,7 +61,9 @@
 	margin-right: -10%;
 	padding-left: 10%;
 	padding-right: 10%;
+  background-color: #fdf6e3cc;
 	/*background: linear-gradient(to right, #beffb5, #19efef 77%);*/
+  color: DarkSlateBlue;
 }
 
 .reveal h3 {
@@ -61,6 +85,9 @@
 	margin-top: auto;
 	margin-bottom: auto;
 }
+.background {
+  background-color: #fdf6e3cc;
+}
 .blank {
 	background: none !important;
 }
@@ -78,7 +105,7 @@
 	font-size: 5vh;
 }
 .contact p {
-	color: white;
+	color: peru;
 	text-align: center;
 	font-size: 3vh;
 	line-height: 5vh;

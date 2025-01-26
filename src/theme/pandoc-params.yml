@@ -24,12 +24,12 @@ fail-if-warnings: true
 
 # These variables go to the renderer, here Reveal.js
 variables:
-  theme: sky
+  theme: solarized
   # dimensions shall be int’s for Reveal.js to parse them correctly
   width: 1280
   height: 768
   margin: 0.1  # to ensure readability
 
   title-slide-attributes:
-    #data-background-image: theme/image page de garde.jpg
+    data-background-image: img/montagne.png
     data-background-size: cover
