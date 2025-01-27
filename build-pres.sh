@@ -1,9 +1,9 @@
-#!/bin/env sh
+#!/bin/env bash
 cd src
 
 mkdir -p public
 mkdir -p plantuml-images
-docker run \
+podman run \
   --rm \
   -v `pwd`/:/var/docs/:ro \
   -v `pwd`/plantuml-images/:/var/docs/plantuml-images/:rw \
@@ -12,7 +12,7 @@ docker run \
   docker.io/ojob/pandoc-plantuml \
   --filter pandoc-plantuml \
   -d theme/pandoc-params.yml \
-  --self-contained
+  --self-contained \
   *.md \
   $*
 
