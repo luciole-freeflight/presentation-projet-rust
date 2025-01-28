@@ -1,0 +1,42 @@
+name: github-pages
+
+on:
+- push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - run: cd src
+
+      - run: mkdir -p _site
+
+      - uses: docker://pandoc/core
+        with:
+          args: >-
+            --defaults theme/pandoc-params.yml
+            --self-contained
+            --output _site/index.html
+            content.md
+
+      - uses: actions/upload-pages-artifact@v2
+
+  deploy:
+    needs: build
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+    steps:
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v2
