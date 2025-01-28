@@ -12,102 +12,105 @@
  */
 
 .reveal .slides {
-	margin-top: 0;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: auto;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
 }
 
-
 #title-slide h1 {
-  font-size: 3em;
-  color: DarkOrange;
-  background-color: #fdf6e300;
-  font-weight: bolder;
+    font-size: 3em;
+    color: DarkOrange;
+    background-color: #fdf6e300;
+    font-weight: bolder;
 }
 
 #title-slide .subtitle {
-  font-size: 1.5em;
+    font-size: 1.5em;
 }
 
 #title-slide p {
-	/* text under title, on front slide */
-	color: gray;
-  background-color: #fdf6e3cc;
-  /*
+    /* text under title, on front slide */
+    color: gray;
+    background-color: #fdf6e3cc;
+    /*
 	text-shadow: 0 0 2px gray, 0 0 10px black;
   */
 }
 
+code {
+    background-color: Wheat;
+}
+
 .subtitle {
-  color: peru;
+    color: peru;
 }
 .author {
-  font-size: 1em;
+    font-size: 1em;
 }
 
 .reveal h1 {
-	font-size: 2.3em;
-	padding-top: 0.8em;
-	padding-bottom: 0.8em;
+    font-size: 2.3em;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
 }
 .reveal h2 {
-	font-size: 1.8em;
+    font-size: 1.8em;
 }
 .reveal h1,
 .reveal h2 {
-	/* on s'assure que le fond de titre est assez large -- à améliorer */
-	margin-left: -10%;
-	margin-right: -10%;
-	padding-left: 10%;
-	padding-right: 10%;
-  background-color: #fdf6e3cc;
-	/*background: linear-gradient(to right, #beffb5, #19efef 77%);*/
-  color: DarkSlateBlue;
+    /* on s'assure que le fond de titre est assez large -- à améliorer */
+    margin-left: -10%;
+    margin-right: -10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #fdf6e3cc;
+    /*background: linear-gradient(to right, #beffb5, #19efef 77%);*/
+    color: DarkSlateBlue;
 }
 
 .reveal h3 {
-	font-size: 1.4em;
+    font-size: 1.4em;
 }
 
 /* classes spécifiques pour la présentation */
 .left {
-	float: left;
-	max-height: 90%;
-	width: 45%;
-	margin-top: auto;
-	margin-bottom: auto;
+    float: left;
+    max-height: 90%;
+    width: 45%;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 .right {
-	float: right;
-	max-height: 90%;
-	width: 45%;
-	margin-top: auto;
-	margin-bottom: auto;
+    float: right;
+    max-height: 90%;
+    width: 45%;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 .background {
-  background-color: #fdf6e3cc;
+    background-color: #fdf6e3cc;
 }
 .blank {
-	background: none !important;
+    background: none !important;
 }
 .contact {
-	position: absolute;
-	top: 50vh;
-	margin-top: -8vh;
-	left: 50vw;
-	margin-left: -45vw;
-	width: 30vw;
+    position: absolute;
+    top: 50vh;
+    margin-top: -8vh;
+    left: 50vw;
+    margin-left: -45vw;
+    width: 30vw;
 }
 .contact p:first-child {
-	text-transform: uppercase;
-	font-family: 'bebas neue';
-	font-size: 5vh;
+    text-transform: uppercase;
+    font-family: "bebas neue";
+    font-size: 5vh;
 }
 .contact p {
-	color: peru;
-	text-align: center;
-	font-size: 3vh;
-	line-height: 5vh;
-	margin: 0;
+    color: peru;
+    text-align: center;
+    font-size: 3vh;
+    line-height: 5vh;
+    margin: 0;
 }
